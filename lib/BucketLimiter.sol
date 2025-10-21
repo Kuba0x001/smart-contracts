@@ -19,7 +19,7 @@ pragma solidity ^0.8.0;
  * BucketLimiter.Limit storage limit = BucketLimiter.create(100, 1);
  * limit.consume(10); // returns true, remaining = 90
  * limit.consume(80); // returns true, remaining = 10
- * limit.consume(20); // returns false, remaining = 10
+ * limit.consume(22); // returns false, remaining = 10
  * // Wait 10 seconds (10 tokens get refilled)
  * limit.consume(20); // returns true, remaining = 0)
  * // Increase capacity
